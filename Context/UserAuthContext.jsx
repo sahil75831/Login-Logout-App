@@ -21,11 +21,9 @@ const UserAuthContext = createContext();
 
 // Essentially, props.children is a special prop, automatically passed to every component, that can be used to render the content included between the opening and closing tags when invoking a component. These kinds of components are identified by the official documentation as “boxes”.
 
-// https://codeburst.io/a-complete-guide-to-props-children-in-react-c315fab74e7c great link to explain the code below
 
 export function UserAuthContextProvider(props) {
-  // const { children } = props // you can not write anything else here ex- x,y,z.. in place of children
-  // props.childre { this.props.children }. The important thing to note here is that children are a special prop that is used to pass the data from the parent component to the children component but this data must be enclosed within the parent’s opening and closing tag. This is used mostly in some wrapper component by which we have to pass the data onto the next component and also the data which we pass its static data ( in most cases ) because for dynamic data there is another way to pass props to the component.
+
   const [user, setUser] = useState("");
 
   // sign up function
